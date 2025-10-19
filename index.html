@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Forms</title>
 </head>
 <body>
-    <h1>H</h1>
+    <center>
+    <h1><u>Student Registration Form</u></h1>
+    <form action=".php" method="post">
+        <p>Roll no.:
+        <input type="text" name="Roll no." placeholder="Enter your Roll no." size="50" required>
+        </p>
+        <p>Student Name:
+            <input type="text" name="student name" placeholder="first name" required> -  
+            <input type="text" name="last name" placeholder="last name">
+        </p>
+        <p>Father's Name:
+            <input type="text" name="Father's Name" placeholder="Enter your Father's Name"
+            size="50" required>
+        </p>
+        <p>Date of Birth:
+            <input type="text" name="Date of Birth" placeholder="Day" required> - 
+            <input type="month" name="Date of Birth" required> - 
+            <input type="number" name="Date of Birth" placeholder="Year" required> (DD-MM-YYYY)
+        </p>
+        <p>Mobile no.: 
+            <input type="text" name="Mobile no." placeholder="+91" size="1" > - 
+            <input type="number" name="Mobile no.">
+        </p>
+        <p>Email: 
+         <input type="email" name="email" placeholder="Enter your Email" size="50" required>
+        </p>
+        <p>Password:
+        <input type="password" name="password" placeholder="Enter your password" size="50" required>
+        </p>
+        <p>Gender:
+            <input id="male" type="radio" name="Gender" value="Male">
+            <label for="male">Male</label>
+            <input id="Female" type="radio" name="Gender" value="Female">
+            <label for="Female">Female</label>            
+        </p>
+        <p>Department:
+            <input type="checkbox" name="Department" value="CSE">CSE
+            <input type="checkbox" name="Department" value="IT">IT
+            <input type="checkbox" name="Department" value="ECE">ECE
+            <input type="checkbox" name="Department" value="CIVIL">CIVIL
+            <input type="checkbox" name="Department" value="MECH">MECH
+        </p>
+        <P>Course:
+            <input type="text" name="course" placeholder="select current course" size="50" required>
+        </P>
+        <p>Student Photo:
+            <input type="file" name="Student Photo" value="Photo" required>
+        </p>
+        <p>City:
+            <input type="text" name="city" placeholder="Enter your city" size="50">
+        </p>
+        <p>Address:
+            <textarea name="Address" cols="20" rows="4">Enter your address</textarea>
+        </p>
+
+        <input type="submit" name="submit" value="Register">
+    </form>
+    </center>
 </body>
 </html>
